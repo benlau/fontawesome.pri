@@ -2,8 +2,6 @@
 
 FontAwesome.pri bundle FontAwesome font and icons table into a single project for QML project.
 
-Remarks: This project is still under development
-
 Features
 --------
 
