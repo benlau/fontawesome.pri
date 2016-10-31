@@ -5,7 +5,7 @@ FontAwesome.pri bundle FontAwesome font and icons table into a single project fo
 Features
 --------
 
- 1. Available in qpm 
+ 1. Installable by qpm
  2. Work well with Qt Quick Designer. Able to show icons in "Design" mode
  3. Auto completion of icon name works in Qt Creator.
  
@@ -13,6 +13,7 @@ Example
 -------
  
  ```
+import QtQuick 2.0
 import FontAwesome 1.0
 
 Text {
