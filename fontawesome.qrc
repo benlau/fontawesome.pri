@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FontAwesome/fontawesome-webfont.ttf</file>
+        <file>FontAwesome/FontAwesome.qml</file>
+        <file>FontAwesome/qmldir</file>
+        <file>FontAwesome/Object.qml</file>
+    </qresource>
+</RCC>
