@@ -1,6 +1,6 @@
 {
   "name": "font.awesome.pri",
-  "description": "",
+  "description": "Using FontAwesome in QML",
   "author": {
     "name": "Ben Lau",
     "email": "xbenlau@gmail.com"

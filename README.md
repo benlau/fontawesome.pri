@@ -19,7 +19,7 @@ import FontAwesome 1.0
 
 Text {
   text: FontAwesome.addressBook
-  family: FontAwesome.fontFamily
+  font.family: FontAwesome.fontFamily
 }
 ```
  
