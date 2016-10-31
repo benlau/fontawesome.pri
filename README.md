@@ -1,6 +1,6 @@
 # FontAwesome.pri
 
-FontAwesome.pri bundle FontAwesome font and icons table into a single project for QML project.
+FontAwesome.pri bundle FontAwesome font and icon table into a single module for QML project.
 
 Features
 --------
