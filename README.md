@@ -23,5 +23,17 @@ Text {
 }
 ```
  
- TODO: Screenshot
- 
+![Screenshot](https://raw.githubusercontent.com/benlau/fontawesome.pri/master/docs/designmode.png)
+
+Installation
+------------
+
+Install FontAwesome.pri by qpm:
+
+    qpm install font.awesome.pri
+    
+Add "qrc://" to your QML import path
+
+    engine.addImportPath("qrc:///"); // QQmlEngine
+   
+    
