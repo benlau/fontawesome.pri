@@ -35,4 +35,4 @@ Add "qrc://" to your QML import path
 
     engine.addImportPath("qrc:///"); // QQmlEngine
    
-    
+For complete icon list, please check the [FontAwesome.qml](https://github.com/benlau/fontawesome.pri/blob/master/FontAwesome/FontAwesome.qml) file.
