@@ -17,8 +17,9 @@ import QtQuick 2.0
 import FontAwesome 1.0
 
 Text {
+  // The font will be loaded once the singleton object, FontAwesome, is referred in the application.
   text: FontAwesome.addressBook
-  font.family: FontAwesome.fontFamily
+  font.family: FontAwesome.fontFamily 
 }
 ```
  
@@ -34,5 +35,22 @@ Install FontAwesome.pri by qpm:
 Add "qrc://" to your QML import path
 
     engine.addImportPath("qrc:///"); // QQmlEngine
-   
-For complete icon list, please check the [FontAwesome.qml](https://github.com/benlau/fontawesome.pri/blob/master/FontAwesome/FontAwesome.qml) file.
+
+API
+---
+
+**FontAwesome**
+
+FontAwesome is a signleton object. 
+Once it is referred in your code, it will load the font into memory. 
+Then it will be available for all other components.
+Therefore, it is recommended to refer it on main.qml.
+
+**FontAwesome.fontFamily**
+
+It hold the font name. You may pass to the `font.family` in Text component
+
+**Icon Table**
+
+Moreover, FontAwesome object also hold a icon table. 
+For complete icon list, please check the source of [FontAwesome.qml](https://github.com/benlau/fontawesome.pri/blob/master/FontAwesome/FontAwesome.qml) file.
