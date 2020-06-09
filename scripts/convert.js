@@ -23,8 +23,8 @@ function toLowerFirstLetter(string) {
 }
 
 lines.forEach(function(line) {
-    var rx = /^\$fa-var-([a-zA-Z][a-zA-Z0-9-]+): *\"([a-zA-Z0-9\\/_.]+)\"/;
-
+    //var rx = /^\$fa-var-([a-zA-Z][a-zA-Z0-9-]+): *\"([a-zA-Z0-9\\/_.]+)\"/;
+    var rx = /^\$fa-var-([a-zA-Z][a-zA-Z0-9-]+): *\"?([a-zA-Z0-9\\/_.]+)\"?/;
     var match = rx.exec(line);
     if (match != null) {
         icons.push([ match[1] , match[2]]);
@@ -44,7 +44,7 @@ icons = icons.map(function(icon) {
         name = name + "Icon";
     }
 
-    return "    property string " + name + " : \"" + value + "\"";
+    return "    readonly property string " + name + " : \"" + value + "\"";
 });
 
 console.log(icons.join("\n"));
